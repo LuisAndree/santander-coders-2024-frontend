@@ -1,0 +1,47 @@
+Clonando um repositorio já existente:
+Comando git clone
+
+O comando git clone é utilizado para criar uma cópia local de um repositório Git que
+está hospedado em um servidor remoto. Este comando não só copia todos os arquivos do 
+repositório, mas também todos os commits, branches e a história completa do projeto. 
+
+git clone <url-do-repositorio>
+
+Processo de Clonagem:
+
+Quando você executa git clone, o Git realiza as seguintes etapas:
+
+1 - Copia o Repositório Remoto: Baixa todos os arquivos e o histórico do repositório remoto.
+
+2 - Configura o Diretório Local: Cria um novo diretório local com o mesmo nome do repositório 
+(ou o nome especificado) e inicializa um repositório Git dentro desse diretório.
+
+3 - Configura o Remote Origin: Configura o remote chamado origin que aponta para o repositório 
+remoto clonado, permitindo a sincronização de futuras atualizações.
+
+Criando um respositorio do 0:
+Comando git init
+
+O comando git init é usado para criar um novo repositório Git. É o ponto de partida para versionar 
+um projeto que ainda não está sob controle de versão. 
+
+git init
+
+Funções do git init:
+
+1 - Cria um Repositório Git Local: Inicializa um novo repositório Git no diretório atual.
+
+2 - Configura o Diretório .git: Cria um diretório oculto chamado .git que contém todos os 
+metadados e histórico do repositório.
+
+Conectar a um Repositório Remoto:
+
+git remote add origin https://github.com/usuario/meu-projeto.git
+
+
+
+
+
+
+
+

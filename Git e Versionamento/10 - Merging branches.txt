@@ -1,0 +1,8 @@
+Comando git merge: 
+
+O comando git merge é utilizado para combinar mudanças de diferentes branches em uma única branch. 
+Isso é fundamental para integrar o trabalho feito em diferentes branches, como novas features, 
+correções de bugs ou outras alterações, na branch principal do projeto.
+
+git merge <branch>
+

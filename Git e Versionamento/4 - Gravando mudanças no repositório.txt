@@ -1,0 +1,80 @@
+Estados do Git:
+
+O Git possui diferentes estados pelos quais os arquivos de um repositório podem passar. 
+Entender esses estados é fundamental para usar o Git de forma eficaz. 
+
+1. Untracked (Não Rastreado)
+
+Descrição: Arquivos que não estão sendo rastreados pelo Git. Eles existem no diretório 
+de trabalho, mas não foram adicionados ao índice (staging area).
+
+Exemplo: Arquivos novos que você criou, mas ainda não adicionou ao controle de versão.
+
+Comando Útil: git status para ver quais arquivos estão não rastreados.
+
+2. Tracked (Rastreado)
+
+Arquivos que estão sendo rastreados pelo Git e podem estar em um dos seguintes subestados:
+
+Unmodified (Não Modificado): Arquivos que não foram alterados desde o último commit.
+
+Modified (Modificado): Arquivos que foram alterados desde o último commit, mas ainda não 
+foram adicionados ao índice.
+
+Staged (Preparado): Arquivos que foram alterados e adicionados ao índice, prontos para serem 
+incluídos no próximo commit.
+
+Fluxo de Estados:
+
+Untracked -> Tracked {
+	Comando: git add <arquivo>
+	Descrição: Adiciona um arquivo não rastreado ao índice, passando a ser rastreado.
+}
+
+
+
+Modified -> Staged {
+	Comando: git add <arquivo>
+	Descrição: Adiciona um arquivo modificado ao índice, preparando-o para o commit.
+}
+
+Staged -> Committed {
+	Comando: git commit -m "mensagem do commit"
+	Descrição: Confirma as mudanças dos arquivos no índice, criando um novo commit.
+}
+
+Staged -> Unstaged {
+	Comando: git reset <arquivo>
+	Descrição: Remove um arquivo do índice, mas mantém as mudanças no diretório de trabalho.
+}
+
+Untracked --(git add)--> Staged --(git commit)--> Committed
+    |                              ^
+    |                              |
+    |                              |
+    v                              |
+Tracked (Unmodified) --(modificar)--(git add)--> Staged
+    |
+    v
+Modified
+
+Comando git status:
+
+O comando git status é uma ferramenta essencial no Git que fornece informações detalhadas sobre o 
+estado atual do repositório. Ele mostra quais arquivos estão sendo rastreados, quais foram modificados, 
+quais estão no índice (staging area) prontos para serem commitados, e quais não estão sendo rastreados
+
+git status
+
+Comando git add:
+
+O comando git add é uma das operações mais fundamentais no fluxo de trabalho do Git. Ele é usado para 
+adicionar mudanças no diretório de trabalho ao índice (staging area), preparando esses arquivos para 
+serem incluídos no próximo commit.
+
+git add <arquivo> 		-> adiciona um arquivo especifico 
+git add .	  		-> adiciona todos os arquivos modificados
+git add caminho/do/diretorio/   -> adiciona todos os arquivos modificados e não rastreados dentro do diretório especificado ao índice.
+git add *extensão			-> adicionar todos os arquivos com uma extensão específica ex: .js, .html, .css, .txt
+
+ 

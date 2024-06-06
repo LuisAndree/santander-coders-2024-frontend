@@ -1,0 +1,36 @@
+⁫Comando git push:
+
+O comando git push é usado para enviar commits locais para um repositório remoto. 
+Esse comando é fundamental para colaborar com outras pessoas, permitindo que você 
+compartilhe suas mudanças e atualize o repositório remoto com as suas atualizações.
+
+git push <repositório> <branch>
+
+1 - git push 				-> Enviar a Branch Atual para o Repositório Remoto
+2 - git push origin minha-branch 	-> Enviar uma Branch Específica para o Repositório Remoto
+3 - git push --force 			-> Forçar o Envio (Com Cuidado)
+4 - git push --all 			-> Enviar Todas as Branches
+5 - git push origin --tags 		-> Enviar Tags
+ 
+Comando git pull:
+
+O comando git pull é utilizado para atualizar o repositório local com as mudanças do 
+repositório remoto. Ele faz isso combinando dois comandos: git fetch (para obter as 
+mudanças do repositório remoto) e git merge (para mesclar essas mudanças na branch 
+local ativa).
+
+git pull <repositório> <branch>
+
+1 - git pull 				-> Atualizar a Branch Atual com o Repositório Remoto
+2 - git pull origin minha-branch 	-> Atualizar uma Branch Específica com o Repositório Remoto
+
+Comando git fetch: 
+
+O comando git fetch é utilizado para baixar objetos e referências do repositório remoto para 
+o repositório local. Diferente do git pull, ele não mescla automaticamente as mudanças obtidas 
+com a branch atual. Em vez disso, git fetch permite que você veja as mudanças disponíveis antes 
+de decidir integrá-las ao seu trabalho local, oferecendo um controle mais granular sobre o fluxo 
+de trabalho.
+
+git fetch <repositório> <branch>
+

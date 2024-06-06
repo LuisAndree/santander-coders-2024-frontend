@@ -1,0 +1,6 @@
+Apenas instalação do Git
+
+Comandos usados para configurar user name e user email
+
+git config --global user.name "nome-do-usuario"
+git config --global user.email emailDoUsuario@email.com

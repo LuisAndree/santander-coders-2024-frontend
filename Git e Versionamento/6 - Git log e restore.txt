@@ -1,0 +1,48 @@
+Comando git log:
+
+O comando git log é usado para exibir o histórico de commits de um repositório Git. 
+Ele mostra informações detalhadas sobre os commits, como o hash SHA-1, o autor, a data 
+e a mensagem do commit.
+
+git log
+
+1 - git log --oneline 	-> --oneline: Exibe cada commit em uma única linha, mostrando apenas o hash SHA-1 e a mensagem do commit.
+2 - git log --graph     -> --graph: Mostra uma representação gráfica dos commits e das branches.
+3 - git log --decorate  -> --decorate: Adiciona informações adicionais aos commits, como as referências de branches (por exemplo, HEAD, master, etc.). 
+4 - git log -3          -> -<n> ou --max-count=<n>: Limita o número de commits exibidos ao <n> mais recentes.
+
+Ex:
+
+1 - git log 		-> Exibir o Histórico Completo de Commits
+2 - git log --oneline   -> Exibir o Histórico de Commits de Forma Resumida
+3 - git log --graph 	-> Exibir o Histórico de Commits com Representação Gráfica
+4 - git log -3 		-> Exibir os Últimos Três Commits
+
+Saída do git log
+A saída do git log inclui as seguintes informações para cada commit:
+
+1 - Hash SHA-1: Identificador único para o commit.
+2 - Autor: Nome e endereço de e-mail do autor do commit.
+3 - Data: Data e hora em que o commit foi criado.
+4 - Mensagem do Commit: Mensagem descritiva fornecida pelo autor do commit.
+
+Exemplo de Saída do git log:
+
+commit 1234567890abcdef1234567890abcdef1234567
+Author: Nome do Autor <email@exemplo.com>
+Date:   Tue May 25 12:34:56 2024 -0400
+
+    Mensagem descritiva do commit
+
+Comando git restore:
+
+O comando git restore é usado para restaurar arquivos no seu repositório de versões anteriores ou para 
+desfazer mudanças. Ele oferece um controle preciso sobre o que você deseja reverter ou restaurar no seu 
+diretório de trabalho e no índice (staging area).
+
+git restore [opções] <arquivo>
+
+1 - git restore <arquivo> -> Restaurar Arquivo para o Último Commit Ex: git restore meu-arquivo.txt
+2 - git restore --staged <arquivo> -> Ex: git restore --staged meu-arquivo.txt
+3 - git restore --source=<commit> <arquivo> ->  Ex: git restore --source=abc1234 meu-arquivo.txt
+

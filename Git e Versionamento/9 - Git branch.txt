@@ -1,0 +1,24 @@
+Comando git brach:
+
+O comando git branch no Git é usado para listar, criar, renomear e excluir branches. 
+As branches são uma parte fundamental do fluxo de trabalho em Git, permitindo que 
+você trabalhe em diferentes versões do seu projeto simultaneamente.
+
+1 - git branch 					-> Listar Branches
+
+2 - git branch nome-da-branch 			-> Criar uma Nova Branch
+
+3 - git branch -m nome-antigo nome-novo 	-> Renomear uma Branch
+
+4 - git branch -d nome-da-branch 		-> Excluir uma Branch
+
+5 - git branch -D nome-da-branch 		-> Exclui a branch nome-da-branch mesmo que ela tenha mudanças não mescladas
+
+6 - git branch -r 				-> Listar Branches Remotas
+
+7 - git branch -a 				-> Listar Todas as Branches (Locais e Remotas)
+
+8 - git checkout nome-da-branch			-> Usado para mudar para outra branch ou criar uma nova branch e mudar para ela.
+
+9 - git merge nome-da-branch			-> Usado para mesclar mudanças de uma branch em outra
+						
