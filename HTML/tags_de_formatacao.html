@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Formatação de Texto</title>
+</head>
+
+<body>
+    <h1>Tags de Formatação de Texto</h1>
+    <hr>
+
+    <p>Lorem ipsum dolor, sit <strong>amet</strong> consectetur <b>adipisicing</b> elit. Nulla magnam quidem
+        repudiandae! Cupiditate quisquam autem tempora. Id obcaecati beatae, quae nulla vero consectetur debitis quis,
+        suscipit pariatur reiciendis eveniet aut.</p>
+    <!-- Diferença entre <strong> e <b> é que: <strong> é uma tag semântica, ela significa que seu conteudo é forte, importante. <b> só faz o conteudo ficar negrito mas sem sentido semântico -->
+
+    <p>Lorem ipsum dolor sit <i>amet</i> consectetur <em>adipisicing</em> elit. Obcaecati, repellat maiores voluptatem
+        consequuntur fugiat eligendi ipsum illo incidunt assumenda odit fuga suscipit doloremque atque saepe ut
+        veritatis similique id et?</p>
+    <!-- Diferença entre <em> e <i> é que: <em> é uma tag semântica, ela significa que seu conteudo será enfatizado. <i> só faz o conteudo ficar itálico mas sem sentido semântico -->
+
+    <p><u>Texto subliniado</u></p>
+    <!-- Evite usar a tag <u>, em vez disso devemos aplicar um style do CSS text-decoration com a propriedade settada underline -->
+
+    <p><s>Texto riscado</s></p>
+    <!-- Use CSS para fazer isso -->
+
+    <p><mark>Texto destacado</mark></p>
+    <!-- Use CSS para fazer isso -->
+
+    <p>Texto pre formatado</p>
+    <pre>
+        function Produto(nome, preco, estoque) {
+            this.nome = nome
+            this.preco = preco
+        
+            Object.defineProperty(this, estoque, {
+                enumerable: true,  
+                value: true,       
+                writable: true,    
+                configurable: true 
+            })
+        
+            Object.defineProperties(this, { 
+                nome: {
+                    enumerable: true,  
+                    value: true,       
+                    writable: true,    
+                    configurable: true  
+                },
+                preco: {
+                    enumerable: true,  
+                    value: true,       
+                    writable: true,    
+                    configurable: true 
+                }
+            })
+        }
+        const p1 = new Produto('pc', 2000, 10)
+        console.log(p1)
+    </pre>
+    <!-- A tag <pre> em HTML é usada para definir um bloco de texto pré-formatado. O conteúdo dentro da tag <pre> é exibido em um formato de texto com largura fixa, preservando exatamente os espaços em branco e as quebras de linha como são escritos no código fonte. use para codigo multiline -->
+
+    <p>a constante <code>p1</code> recebe um <code>objeto</code> do tipo <code>Pessoa</code></p>
+    <!-- A tag <code> em HTML é usada para definir um fragmento de texto que representa um código de computador. é uma tag inline -->
+
+    <blockquote>"Nada temas, porque Eu estou contigo; não te angusties, porque Eu sou o teu Deus. Eu fortaleço-te e
+        auxilio-te, e amparo-te com a minha mão direita e vitoriosa." (Is 41,10) </blockquote>
+    <!-- A tag <blockquote> em HTML é usada para definir uma seção que é citada de outra fonte. É frequentemente usada para citar um bloco de texto que vem de outra parte do documento ou de uma fonte externa. -->
+
+    <p>Potenciação: 2<sup>10</sup></p>
+    <p>Subtexto: H<sub>2</sub>O</p>
+</body>
+
+</html>
