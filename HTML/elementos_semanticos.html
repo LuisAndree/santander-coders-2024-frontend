@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Semânticos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            Barra de Navegação
+            <!-- A tag <nav> em HTML é usada para definir um bloco de links de navegação. Esta tag é apropriada para qualquer conjunto de links que ajudam na navegação do site, como menus principais, barras laterais de navegação, ou links para outras partes do mesmo documento. -->
+        </nav>
+    </header>
+    <main>Conteudo Principal
+        <section id="about-me">
+            <!-- A tag <section> em HTML é usada para definir uma seção em um documento. Esta seção representa um agrupamento temático de conteúdo, tipicamente com um cabeçalho, e pode ser utilizada para dividir o conteúdo em blocos lógicos. -->
+            <figure>
+                <!-- A tag <figure> em HTML é usada para agrupar elementos de conteúdo ilustrativo, como imagens, diagramas, fotos, código ou qualquer outro conteúdo que é referenciado no texto principal. Geralmente, a tag <figure> é acompanhada pela tag <figcaption>, que fornece uma legenda ou descrição para o conteúdo do <figure>. -->
+                <img src="https://avatars.githubusercontent.com/u/73355463?v=4" alt="imagem-de-perfil-github-Luis-Andre"
+                    width="200">
+                <figcaption>Imagem de perfil do GitHub de Luís André</figcaption>
+            </figure>
+        </section>
+        <section id="portifolio">
+            portifólio
+        </section>
+        <section id="blog">
+            <article>
+                <!-- A tag <article> em HTML é usada para definir conteúdo independente e autossuficiente que poderia ser distribuído ou reutilizado separadamente, como uma postagem de blog, um artigo de jornal, uma entrada de fórum ou qualquer outra seção de conteúdo independente. -->
+                <header>
+                    <h3>Artigo</h3>
+                </header>
+                <main>Conteudo do Artigo</main>
+                <footer>Footer do Artigo</footer>
+            </article>
+        </section>
+    </main>
+    <aside>
+        Barra Lateral
+        <!-- a tag <aside> pode ser colocada fora ou dentro da <main> depende se ela faz parte do conteudo principal da página, geralmente é colocada fora da <main> -->
+    </aside>
+    <footer>Rodapé Desenvolvido por Luís André.</footer>
+    <!-- perceba que visualmente todas essas tags são iguais, o que vai moldar, dar estilo nescessario é o CSS, porem, o importante é o sentido, semântica que facilita os resultados de busca, os mecanismos irão entender melhor o seu site e também facilita em termos de acessibilidade -->
+</body>
+
+</html>
