@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 26px;
+    color: antiquewhite;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: blueviolet;
+    border: 1.5rem solid #087db3;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.box:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
