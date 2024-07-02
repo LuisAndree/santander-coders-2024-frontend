@@ -1,0 +1,40 @@
+p {
+    font-family: "Comic Neue", cursive;
+}
+
+.pixel-example {
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.percentage-example {
+    width: 50%;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.em-example {
+    font-size: 16px;
+}
+
+.em-example p {
+    margin-bottom: 2em;
+    background-color: lightcoral;
+}
+
+.rem-example {
+    margin-top: 2rem;
+    background-color: lightyellow;
+}
+
+.vw-vh-example {
+    width: 50vw;
+    height: 50vh;
+    background-color: lightgray;
+}
+
+.vmin-vmax-example {
+    font-size: 2vmin;
+    background-color: lightpink;
+}
