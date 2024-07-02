@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tabelas HTML</h1>
+        <section id="studants">
+            <h2>Tabela de Alunos</h2>
+            <table border="1">
+                <thead>
+                    <!-- <thead> é o cabeçalho da tabela-->
+                    <tr>
+                        <!-- <tr> é table row, linha da tabela -->
+                        <th>Nome</th>
+                        <!-- <th> é uma celula de cabeçalho de uma tabela -->
+                        <th>Email</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tbody> é o corpo da tabela, onde tem o conteudo -->
+                    <tr>
+                        <td>Leticia</td>
+                        <!-- td é table data, é uma cecula da tabela -->
+                        <td>leticia@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Maia</td>
+                        <td>maria@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Luís André</td>
+                        <td>luisandre@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="finances">
+            <h2>Tabela de Finanças</h2>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">15/16/2022</td>
+                        <!-- rowspan mescla linhas -->
+                        <td colspan="2">Despesa</td>
+                        <!-- colspan mescla colunas -->
+                        <!-- <td>Almoço</td> -->
+                        <td>R$ 35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>R$ 3768,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>
